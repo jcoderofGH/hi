@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --background-color: #ffffff;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.hero {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 50px;
+    animation: fadeIn 1s;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid var(--secondary-color);
+}
+
+.music-player {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    padding: 10px;
+}
+
+.members-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.members-list li {
+    padding: 5px;
+    color: var(--accent-color);
+}
